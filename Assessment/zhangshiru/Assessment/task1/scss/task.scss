@@ -69,12 +69,16 @@ header{
 		repeat:no-repeat;
 	}
 }
-.search_bar>div[class$="wrap"]{
+.search_bar div[class$="wrap"]{
 	float: left;
+}
+.web{
+	width: 960px;
+	margin: 0 auto;
+	height: 100%;
 }
 .shop_wrap{
 	height: 100%;
-	margin-left: 280px;
 }
 .shop_wrap img{
 	vertical-align: middle;
