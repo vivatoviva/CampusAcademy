@@ -1,0 +1,12 @@
+/*psd1 css*/
+
+body,ul,p,h1,h2,h3,h4,dl,dd,form,input,textarea,select{ padding:0; margin:0;font-family:arial;} /*样式重置方案*/
+
+li { list-style:none;} /*--li去点*/
+img{border: none;}/*img加a链接去蓝色边框*/
+a  { text-decoration:none;}
+a:hover { text-decoration: underline;}/*去下划线*/
+
+
+body{ background: #FFFFFF url(../../img/top_img/body_bg.png)repeat-x;} /*#设置背景色为白色然后横向平铺背景*/
+
