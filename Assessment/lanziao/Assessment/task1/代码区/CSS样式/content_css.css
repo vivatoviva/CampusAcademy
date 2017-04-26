@@ -1,0 +1,101 @@
+
+/* content_css */
+
+#content_top {width:1000px;background: url(../../img/content_img/background_02.png)no-repeat}
+#content {width:1000px;margin:24px auto ;background: url(../../img/content_img/background_02.png)repeat-y -1000px 0;}
+#content_bottom {width:1000px;background: url(../../img/content_img/background_02.png) no-repeat -2000px bottom;}
+
+#ad {width:940px;height:300px;position:relative;/*相对定位，因为相对定位，不用margin也可用后面加top:;left:;来调整居中，要去量位置。*/margin:0 auto;}
+#ad ul { position:absolute;top:9px;left:0;z-index: 1;}/*ul要被h2,p,bg盖在下面*/
+#ad li { position:absolute;top:0;left:0;}
+#ad h2 { position:absolute;left: 0; bottom:0;z-index: 3;width:268px;text-align:center;font-size: 25px;color: #ffc600;/**/}
+#ad p { position:absolute;bottom:-2px;left:268px;z-index: 3;color: #FFFCCC;font-size: 13px;line-height: 16px;/*行高16px*/width:630px;}
+#ad .bg {width:940px;height:52px;background: #2a2c24;opacity:0.8;/*用alpha滤镜里的opacity（调节透明度属性，也可用rgba）调成半透明，80%*/position:absolute;bottom:-9px/*这里因为上面ul是9所以调整为-9*/;left:0px;/*绝对定位到左下角*/z-index: 2;}
+
+#main { width: 942px;height:auto; margin:0 auto;padding-top:40px;}
+#side { width:210px;float:left;}
+#wrap { width:706px;float:right;}
+
+
+
+.module_menu { margin-bottom: 16px;}
+.module_menu h2 { height:29px;text-align:center; font-size: 15px; color: #ffffff; background: url(../../img/content_img/side_top.png) repeat-x 0 -58px; margin-bottom: 1px;}
+.module_menu h2 strong {  display: block; height:29px;background: url(../../img/content_img/side_top.png) no-repeat;}
+.module_menu h2 span { display: block; height:29px;background: url(../../img/content_img/side_top.png) no-repeat right -29px;}
+.module_menu h2 span p {padding-top:6px;}
+/*视频6*/
+
+.list { height: 307px;/*让下面圆角露出来，其他浏览器可能出出现错误，后续改*/ background:url(../../img/content_img/side_list.png) repeat-y;}
+.list ul {  background: url(../../img/content_img/side_list.png)no-repeat -210px bottom;padding:18px  8px  15px;}
+.list li {}
+.list a { display: block; height:27px;line-height: 27px;border-bottom: 1px solid #ffffff;color:#434343;text-decoration: none;font-weight: bold;font-size: 12px;padding-left:32px;}
+.list a:hover { color:#b20e00;border-bottom: 1px solid #b20e00;background:#FAE191; }
+
+.module_join { width:210px;background:url(../../img/content_img/side_list.gif)repeat-y -630px;}
+.module_join_t { background: url(../../img/content_img/side_list.gif) no-repeat -420px 0;}
+.module_join_b { background: url(../../img/content_img/side_list.gif) no-repeat -840px bottom;}  
+
+.Join_form { width:180px;margin: 0 auto 12px;}
+.Join_form p {font-size: 15px;color: #666666;line-height: 18px;padding: 12px 9px;}
+.Join_form .text { width:175px;height: 25px; line-height:25px;/*行高也设置成25可让输入文字居中*/background:#FFFFFF;border:1px solid #ffffff;border-top:1px solid #9c9c9c;border-left:1px solid #c0c0c0;margin-bottom: 6px;}
+.Join_form .btn {width: 88px;height:25px;border:none;font-size: 15px;color: #ffffff;font-weight: bold;background: url(../../img/content_img/join_now.png) no-repeat;margin: 0 auto;display: block;}
+
+.join_list { width: 194px;margin: 0 auto;background: url(../../img/content_img/tfim_icon.png) no-repeat 10px;}
+.join_list li{ border-top: 1px solid #ffffff;padding-left: 62px;color:#434343;font-size: 13px;}
+
+.space1 { height: 45px;line-height:45px;}
+.space2 { height: 38px;padding-top: 8px;line-height: 18px;}
+.space3 { height: 45px;padding-top: 10px;line-height: 18px;}
+.space4 { height: 45px;padding-top: 5px;line-height: 18px;}
+
+#payment { margin:33px 0 0 18px;}
+
+.sort {height: 20px;}
+.sort dl { float: left;}
+.sort dt { float: left;font-size: 12px; color: #747474; font-weight: bold;padding-right: 2px;}
+.sort dd { float: left;width: 109px;height: 19px; position: relative;margin-right: 12px;}
+.sort h2 { width:107px;height: 17px;border:1px solid #CCCCCC;font-size:12px;color:#747474;font-weight:normal;text-indent: 5px;}
+.sort a {position: absolute;top:0;left:90px; width: 19px;height: 19px;background: url(../../img/content_img/icccon.png)no-repeat; z-index: 2;}
+.sort a:hover {background: url(../../img/content_img/icccon.png)no-repeat -19px;}
+.sort ul { width:107px;border:1px solid #cccccc;background: #ffffff;position: absolute;top: 18px; left:0;z-index: 1;display: none;}
+.sort li { font-size: 12px;line-height: 20px;text-indent: 5px;cursor: pointer;/*鼠标到指定区域变成手*/}
+.sort .active1 { background: #F30D11;color: #FFFFFF;}
+.sort p { font-size: 12px; float: right;z-index: 1;color: #747474;}
+.sort p strong { color: #999999;}
+.sort p span { padding: 0 2px;}
+.sort .color_style {color: #B20E00;}
+
+
+.pic_list { width:706; overflow:hidden}
+.pic_list h2,#scroll_list h2 { height: 58px;;line-height: 64px;overflow: hidden;/*提高行高让文字偏下然后隐藏下面。*/font-size: 18px;color:#666666;}
+.pic_list ul {width:736px;}
+.pic_list li {float: left; width:182px;height: 200px;}
+.pic_list a {display: block; width: 154px; height: 114px; border: 1px solid #c6c6c6;margin-bottom: 6px;}
+.pic_list a:hover {border: 1px solid #000000;}
+.pic_list h3 { font-size: 15px; color: #666666; line-height: 16px;}
+.pic_list p {font-size: 13px; color: #333333; line-height: 16px;}
+.pic_list span { color: #B20E00}
+
+
+.page { text-align: center;border-bottom: 1px solid #cdcdc8;padding-bottom: 5px;}
+.page a {display: inline-block; height: 20px;line-height: 20px; padding: 0 8px;color: #b20e00;text-decoration: none;font-size: 12px;}
+.page a:hover,.page .active2 { color: #ffffff;background: #b20e00;}
+.page span {font-family: '';}
+
+
+
+
+.scroll_wrap,.scroll_wrap_l { height: 196px;background: url(../../img/content_img/scroll_bg.png) no-repeat ;}
+.scroll_wrap_r { height: 196px;background: url(../../img/content_img/scroll_bg.png) no-repeat; position:relative;}
+
+.prev,.next { width: 35; height: 44px; position: absolute;top:70px;}
+
+.prev { left:0;background: url(../../img/content_img/left.png) no-repeat;}
+.next { right:0;background: url(../../img/content_img/right.png) no-repeat;}
+
+.list_wrap { width: 615px; padding-top: 40px;margin: 0 auto;}
+.list_wrap ul {height: 150px;}
+.list_wrap li { width: 205px; float: left;}
+.list_wrap a,.list_wrap p { width: 145px;margin: 0 auto}
+.list_wrap a { display: block; height: 100px;}
+.list_wrap p { line-height: 14px;padding-top: 10px; font-size: 12px;color: #660000;text-align: center;}

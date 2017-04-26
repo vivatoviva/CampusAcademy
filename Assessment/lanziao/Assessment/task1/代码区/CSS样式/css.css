@@ -1,0 +1,77 @@
+/*psd1 css*/
+
+body,ul,p,h1,h2,h3,h4,dl,dd,form,input,textarea,select{ padding:0; margin:0;font-family:arial;} /*样式重置方案*/
+
+li { list-style:none;} /*--li去点*/
+img{border: none;}/*img加a链接去蓝色边框*/
+a  { text-decoration:none;}
+a:hover { text-decoration: underline;}/*去下划线*/
+
+
+body{ background: #FFFFFF url(../../img/top_img/body_bg.png)repeat-x;} /*#设置背景色为白色然后横向平铺背景*/
+
+#top { width:1018px;height:30px; margin:0 auto;}
+
+.top_menu { float:left;}
+
+.top_menu li { float: left; background: url(../../img/top_img/top_ico.png) no-repeat right 14px;font-size: 13px; line-height: 30px;padding-right: 18px;margin-right: 15px;}
+
+.top_menu a { color:#c0c0c0;}/*文字颜色在原设计上取色出来*/
+
+.top_menu a:hover { color:#FFFFFF;/*鼠标移到文字链接显示变白色*/} /*决定鼠标移到链接是否有变化,选字符简短互不干扰就行，不用写清楚在哪一部分*/
+
+.top_menu .no_dot { background: none;padding: 0;margin: 0;/*去掉点儿。背景为无*/}
+
+
+.top_bar {float: right}
+
+.top_bar li { float: left; height:30px;color:#FFFFFF ; font-weight: bold;/*phone这边文字为白色，加粗。后面是设置字体size*/font-size:13px; line-height: 30px;}
+
+.top_bar .phone { background: url(../../img/top_img/top_ico.png) no-repeat 1px -16px;padding:0 30px 0 28px;}/*padding调节电话、help与两个国旗整体的相互的位置*/
+
+.top_bar .help {background: url(../../img/top_img/top_ico.png) no-repeat 0 -46px;padding:0px 35px 0 38px;}/*padding调节电话、help与两个国旗整体的相互的位置*/
+
+.top_bar .help a { color:#FFFFFF;}
+
+.top_bar .Canada { padding:1px 15px 0px 0px;}/*两个国旗之间距离调整*/
+
+.top_bar .America { padding:1px 15px 0px 0px;}/*两个国旗之间距离调整*/
+
+#header { width:990px;height:100px;margin:0 auto;position:relative;background: url(../../img/header_img/light.png)no-repeat;}
+
+#shopping { width:260px;height:100px;background: url(../../img/header_img/shopping_bg.png) no-repeat;position:relative;}
+
+#shopping p { color: #f7f7f7;width: 214px;font-size: 20px; font-family: arial; padding:30px 0 0 84px;}
+
+#shopping a { display: block; width:114px;height:23px;background: url(../../img/header_img/shopping_bg.png) no-repeat 0 -100px;position: absolute;top:64px;left:104px;
+	/*后面是字体CheckOut样式设置*/font-size:15px;color: #ffc200;text-decoration:none;font-weight: bold;text-align: center;line-height: 22px;}
+#shopping a:hover { color:#ffe388;}/*鼠标移动到上面效果，更亮*/
+
+#header h1 { width: 238px; position: absolute; top:3px;left:50%;margin-left:-119px;}
+
+#header .search {top:33px;right:0;/*因为有绝对定位，所以可以这样定位*/}
+
+.search { width:292px; height: 31px; background: url(../../img/header_img/gider.png) no-repeat;position: absolute;} /*类则用 “.” 来开头*/
+
+.search .text { position: absolute; top:0px; left:20px; width: 230px; height:28px; background: none; border: none; font-size: 13px;color: #666666;outline:none;}
+
+.search .btn { position: absolute;top:0;right:0;width:42px;height: 31px;background: none;border: none; }
+
+
+#nav { width:960px;height: 36px;padding-top: 7px; margin: 0 auto;}
+#nav li { float: left;height:26px;margin-right:8px;  }
+#nav a { float: left;height:26px;
+text-decoration:none;color:#FFFFFF;font-size: 15px;font-family: arial; line-height:28px;/*font-weight:normal；加粗是strong带来，给strong也行*/}/*这行设置文字样式*/
+#nav strong { float: left;height:26px;font-weight:normal}
+#nav span { float: left;height:26px;padding: 0 16px;}
+#nav a:hover ,#nav .active a {background: url(../../img/nav_img/nav_active_bg.png)repeat-x 0 -56px;}
+#nav a:hover strong,#nav .active strong {background:url(../../img/nav_img/nav_active_bg.png) no-repeat;}
+#nav a:hover span,#nav .active span {background: url(../../img/nav_img/nav_active_bg.png) no-repeat right -28px;}
+/*上面有写当active时，块的状态的样式*/
+
+
+#content_top {width:1000px;background: url(../../img/content_img/background_02.png)no-repeat}
+#content {width:1000px;margin:24px  auto ;background: url(../../img/content_img/background_02.png)repeat-y -1000px 0;}
+#content_bottom {width:1000px;background: url(../../img/content_img/background_02.png) no-repeat -2000px bottom;}
+
+
