@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello~</title>
+    <link rel="stylesheet" href="you_1.css">
+    <link rel="stylesheet" href="you_2.css">
+</head>
+<body>
+<script type="text/javascript">
+    function click(){
+        alert("Hello~");
+    }
+</script>
+<h1>Cherish</h1>
+<h2>Being with you is the only way I could have a full and a happy life.<br><br><strong>You are the boy of my dreams and apparently I'm the girl of yours!</strong></h2>
+
+<form action="http://www.starbuzzcoffee.com/processorder.php" method="post">
+    <fieldset>
+        <legend>My data details</legend>
+        <div class="tableRow">
+            <label for="beans">
+                My feelings:
+            </label>
+            <select id="beans" name="beans">
+                <option value="House Blend">&hearts;</option>
+                <option value="Bolivia">&hearts;</option>
+                <option value="Guatemala">&hearts;</option>
+                <option value="Kenya">&uml;</option>
+            </select>
+        </div>
+        <div class="tableRow">
+            <label>My attitude:</label>
+            <p>
+                <input type="radio" id="whole_beantype" name="beantype" value="whole">
+                <label for="whole_beantype">Very seriously</label><br>
+                <input type="radio" id="ground_beantype" name="beantype" value="ground" checked>
+                <label for="ground_beantype">Very sincere</label>
+            </p>
+        </div>
+        <div class="tableRow">
+            <label for="bags">Height:</label>
+            <input type="number" id="bags" name="bags" main="160" max="160" placeholder="160">
+        </div>
+        <div class="tableRow">
+            <label for="date">My fate day:</label>
+            <input type="date" name="date" format="1998/09/30">
+        </div>
+        <div class="tableRow">
+            <label>Character:</label>
+            <p>
+                <input type="checkbox" id="giftwrap_extras" name="extras[]" value="giftwrap">
+                <label for="giftwrap_extras">active</label><br>
+                <input type="checkbox" id="catalog_extras" name="extras[]" value="catalog" checked>
+                <label for="catalog_extras">so cute!</label>
+            </p>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Your data details</legend>
+        <div class="tableRow">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="" placeholder="Mr.right" required>
+        </div>
+        <div class="tableRow">
+            <label for="address">Constellation:</label>
+            <input type="text" id="address" name="address" value="" placeholder="......" required>
+        </div>
+        <div class="tableRow">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" value="" placeholder="......" required>
+        </div>
+        <div class="tableRow">
+            <label for="state">Height:</label>
+            <input type="text" id="state" name="state" value="" placeholder="......" required>
+        </div>
+        <div class="tableRow">
+            <label for="zip">Appearance and Character:</label>
+            <input type="text" id="zip" name="zip" value="" placeholder="so charming&hearts;&hearts;&hearts;" required>
+        </div>
+        <div class="tableRow">
+            <label for="phone">Your fate day</label>
+            <input type="tel" id="phone" name="phone" value="" placeholder="......" required>
+        </div>
+        <div class="tableRow">
+            <label for="comments">Please write your feelings:</label>
+            <textarea id="comments" name="comments"></textarea>
+        </div>
+        <div class="tableRow">
+            <label></label>
+            <input type="submit" value="Click" onClick="click()"/>
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>
