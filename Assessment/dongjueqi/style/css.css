@@ -21,7 +21,7 @@ a:hover{
 
 #top{
 	margin:0 auto;width:960px;height:30px;
-	
+
 }
 
 .top_menu{
@@ -188,7 +188,7 @@ a:hover{
 	color:#ffcccc;
 	font-size:13px;
 	font-weight:normal;
-	
+
 }
 
 .BrandName{
@@ -216,8 +216,9 @@ a:hover{
     -webkit-appearance:none;
 	color:#747474;
 	font-size:13px;
-	background:url(../images/down.png) no-repeat;
-	
+	background:url(../images/down.png);
+	background-position: 100px,100px;
+
 }
 .select span{
 	padding-right:14px;
@@ -252,7 +253,7 @@ a:hover{
 	font-weight:normal;
 	margin-left:36px;
 	margin-top:16px;
-	
+
 }
 
 .categories a{
@@ -316,7 +317,7 @@ a:hover{
 }
 
 #middle{
-	
+
 	width:760px;height:600px;
 	margin-top:-980px;
 	margin-left:265px;
@@ -406,7 +407,7 @@ a:hover{
 	font-size:13px;
 	font-family:Arial;
 	color:#333333;
-	
+
 }
 #middle .price2 a{
 	float:left;
@@ -417,7 +418,7 @@ a:hover{
 	font-size:13px;
 	font-family:Arial;
 	color:#333333;
-	
+
 }
 #middle .price3 a{
 	float:left;
@@ -428,7 +429,7 @@ a:hover{
 	font-size:13px;
 	font-family:Arial;
 	color:#333333;
-	
+
 }
 .num
 {
@@ -465,7 +466,7 @@ a:hover{
 	margin-left:260px;
 	margin-top:-300px;
 	float:left;
-	
+
 }
 .feature hr{
 	float:left;
@@ -487,7 +488,7 @@ a:hover{
 	width:760px;
 	margin-top:-55px;
 	margin-left:60px;
-	
+
 }
 
 .feature .name a{
@@ -541,7 +542,7 @@ a:hover{
 	font-weight:bold;
 	font-size:15px;
 	margin-right:86px;
-	
+
 }
 
 .cate{
@@ -558,7 +559,7 @@ a:hover{
 	font-weight:bold;
 	font-size:15px;
 	margin-right:106px;
-	
+
 }
 
 .soc{
@@ -567,7 +568,7 @@ a:hover{
 	font-weight:bold;
 	font-size:15px;
 	margin-right:106px;
-	
+
 }
 
 .con{
@@ -576,7 +577,7 @@ a:hover{
 	font-weight:bold;
 	font-size:15px;
 	margin-right:106px;
-	
+
 }
 
 .endiii .t1{
