@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="ls">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+  <title>勤奋蜂作业</title>
+  <style type="text/css">
+  *{margin:0;padding:0;list-style:none;font-size:15px;text-decoration:none;}
+  #main{width:1200px;margin:0 auto;}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/font_rvhlxxodcygmn29/iconfont.eot');
+  src: url('../font/font_rvhlxxodcygmn29/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/font_rvhlxxodcygmn29/iconfont.woff') format('woff'),
+  url('../font/font_rvhlxxodcygmn29/iconfont.ttf') format('truetype'),
+  url('../font/font_rvhlxxodcygmn29/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+  /* 顶部 */
+  #header{width:100%;height:100px;background-color:#436EEE;}
+  #logo{width:60px;height:60px;position:relative;top:20px;left:50px;background-color:white;}
+  #in{width:25px;height:25px;border-top:5px solid #436EEE;border-left:5px solid #436EEE;position:absolute;right:0px;bottom:0px;}
+  #top-right{float:right;width:600px;margin-top:-20px;}
+  #search{float:left;margin-right:100px;}
+  #search input{/* border:1px solid #436EEE; */border-radius:10px;height:20px;}
+  #top-right li a{display:inline-block;color:#FFFFFF;padding-top:4px;}
+ /* 左侧 */
+ #left{float:left;width:200px;background-color:#242424;height:1200px;position:relative;color:#878787;}
+#first{height:50px;margin:30px 8px;}
+#first #one{width:60px;height:60px;border:1px solid #BDBDBD;border-radius:50%;float:left;margin-right:30px;margin-left:20px;}
+#first li p{width:50px;overflow:hidden;padding-top:20px;}
+#second{width:200px;height:100px;overflow:hidden;}
+#second li{float:left;width:40px;height:40px;margin:20px;}
+#second #two{border-right:1px solid #404040;padding-right:30px;}
+#third{width:180px;text-align:center;}
+#files{display:none;position:relative;left:10px;}
+#doc{display:none;position:relative;left:10px;}
+#third li{margin:30px 0px;cursor:pointer;}
+
+/* 右侧 */
+ #right{width:1000px;background-color:#EBEBEB;height:1200px;overflow:hidden;}
+#right-top ul{width:100%;height:30px;background-color:#FFFFFF;padding-left:20px;}
+#right-top ul li{float:left;margin:7px;color:#B0B0B0;}
+
+#inquiry{width:900px;height:100px;margin:20px 0px 10px 50px;background-color:#FFFFFF;position:relative;}
+#up{margin:10px;}
+#up select{margin:10px 20px 10px 5px;}
+#down{margin:10px 0px 10px 165px;}
+#down select{margin:10px 20px 10px 5px;}
+.in-search{width:48px;height:28px;border:1 solid #436EEE;border-radius:8px;background-color:#436EEE;position:absolute;right:100px;bottom:35px;}
+
+#his-inquiry{width:900px;height:80px;margin:0px 0px 30px 50px;}
+#his-inquiry ul li{float:left;width:110px;height:80px;background-color:#FFFFFF;margin-right:5px;}
+#his-inquiry ul li.click{width:40px;font-size:30px;text-align:center;line-height:80px;cursor:pointer;}
+#his-inquiry #last-li{width:120px;margin-right:0px;cursor:pointer;}
+#his-inquiry .his-start{border-top:5px solid #436EEE;}
+
+
+
+#trade{width:900px;height:100px;margin:0px 0px 10px 50px;}
+#trade h3{height:20px;}
+#trade ul li{float:left;width:190px;height:80px;margin-right:40px;background-color:#FFFFFF;}
+#trade ul li.first{border-left:5px solid #218868;}
+#trade ul li.second{border-left:5px solid #436EEE;}
+#trade ul li.third{border-left:5px solid red;}
+#trade ul li.forth{border-left:5px solid yellow;margin-right:0px;}
+
+#groups{width:900px;margin:0px 0px 5px 50px;/* background-color:#FFFFFF; */}
+#group1{float:left;width:500px;height:400px;background-color:#FFFFFF;border-radius:5px;}
+#group1 h3{background-color:#F5F5DC;border:1px solid #F5F5DC;border-radius:5px 5px 0px 0px;height:20px;padding-left:10px;line-height:20px;}
+#grp1-title{margin:8px 0px 0px 35px;}
+#grp1-title li{float:left;width:80px;height:30px;line-height:30px;cursor:pointer;background-color:#EBEBEB;margin-right:6px;
+text-align:center;border-radius:5px 5px 0px 0px;}
+#grp1-title li.tabFocus{background-color:#FFFFFF;border:1px solid #EBEBEB;border-bottom:0;border-radius:5px 5px 0px 0px;}
+#grp1-content{width:424px;height:300px;background-color:#FFFFFF;margin:38px 0px 0px 35px;border:1px solid #F5F5DC;}
+#grp1-content li{display:none;}
+#grp1-content li.onFocus{display:block;}
+
+#group2{float:right;width:395px;height:400px;background-color:#FFFFFF;border-radius:5px;}
+#group2 h3{background-color:#F5F5DC;border:1px solid #F5F5DC;border-radius:5px 5px 0px 0px;height:20px;padding-left:10px;line-height:20px;margin-bottom:20px;}
+#group2 h4{color:#C4C4C4;font-size:13px;margin-left:40px;clear:both;}
+#group2 p{font-size:13px;margin:5px 0px 10px 40px;}
+#price{width:100px;height:50px;float:left;margin-left:20px;border:1px solid #F5F5DC;border-left:0;}
+#charge{width:150px;height:50px;overflow:hidden;border:1px solid #F5F5DC;border-right:0;border-left:0;}
+#grp2-bottom{width:250px;height:50px;margin:150px 0px 0px 20px;border-top:1px solid #F5F5DC;padding-top:5px;}
+#grp2-bottom>span{display:inline-block;margin:0px 75px 0px 20px;color:#C4C4C4;} 
+#grp2-bottom .search{width:48px;height:28px;border:1 solid #436EEE;border-radius:8px;background-color:#436EEE;}
+
+#calendar{float:left;width:350px;height:300px;background-color:#FFFFFF;border-radius:5px;overflow:hidden;margin-top:5px;}
+#calendar h3{background-color:#F5F5DC;border:1px solid #F5F5DC;border-radius:5px 5px 0px 0px;height:20px;padding-left:10px;line-height:20px;}
+#cars{float:right;width:545px;height:300px;background-color:#FFFFFF;border-radius:5px;margin-top:5px;position:relative;}
+#cars h3{background-color:#F5F5DC;border:1px solid #F5F5DC;border-radius:5px 5px 0px 0px;height:20px;padding-left:10px;line-height:20px;}/* 几个h3合并 */
+#list{border:1px solid #C5C1AA;width:445px;position:absolute;top:40px;left:50px;border-top:0;border-left:0; }
+#list tr{display:inline-block;width:445px;height:20px;border:1px solid #C5C1AA;border-right:0;border-bottom:0;}
+#list tr th{display:inline-block;width:40px;height:20px;text-align:center;border-right:1px solid #C5C1AA;}
+#list tr td{display:inline-block;width:40px;height:20px;text-align:center;border-right:1px solid #C5C1AA;}
+#list tr .w{width:300px;height:20px;border-right:0;}
+
+
+</style>
+
+  <script type="text/javascript">
+	$(function(){
+		//鼠标移上、移除、单击事件
+		$("#third li").mouseover(function(){
+			$(this).css("color","#FFFFFF")
+		}).mouseout(function(){
+			$(this).css("color","#878787")
+		
+		});
+		$("#prsform").click(function(){
+			
+			if($("#files").css("display")=="none"){
+				$("#files").show();
+				}
+			else{
+				$("#files").hide();
+				}
+			});
+		$("#cfile").click(function(){
+			if($("#doc").css("display")=="none"){
+				$("#doc").show();
+			}else{
+				$("#doc").hide();
+			}
+		});
+		//选项卡
+		$("#grp1-title li").each(function(index){
+			$(this).click(function(){
+				$("#grp1-title li.tabFocus").removeClass("tabFocus");
+				$(this).addClass("tabFocus");
+				$("#grp1-content li:eq("+index+")").addClass("onFocus").show().siblings().hide();
+			});
+		});
+	//历史查询部分
+      $("#his-inquiry li[title=test]").each(function(index){
+		$(this).mouseover(function(){
+			$("#his-inquiry li.his-start").removeClass("his-start");
+			$(this).addClass("his-start");
+		});
+	   /*//左切换键
+		$("#his-inquiry #click-left").click(function(){
+			$("#his-inquiry li.his-start").removeClass("his-start");
+			index=index - 1;
+			//if(index >= 0){
+			$("#his-inquiry li[title=test]:eq("+index+")").addClass("his-start");
+			//}else{
+				//return false;
+			//}
+		});
+	   //右切换键
+     
+	  });*/
+	})
+	
+
+  </script>
+ </head>
+ <body>
+  <div id="main">
+	<div id="header">
+		<div id="logo">
+			<div id="out">
+				<div id="in"></div>
+			</div>
+		</div>
+		<ul id="top-right">
+			<li id="search"><form><input type="text" /></form></li>
+			<li><a href="#" class="iconfont">&#xe632;&nbsp;登录</a></li>
+		</ul>
+	</div>
+	<div id="left">
+		<ul id="first">
+			<li id="one"><a href="#"></a></li>
+			<li><p>ABC321</p></li>
+		</ul>
+		<ul id="second">
+			<li id="two">
+				<p>110</p>
+				<p>收藏</p>				
+			</li>
+			<li>
+				<p>312</p>
+				<p>粉丝</p>
+			</li>
+		</ul>
+		<ul id="third">
+			<li id="prsform" class="iconfont">&#xe61f;&nbsp;个人报表</li>
+				<ul id="files">
+					<li class="iconfont">&#xe672;&nbsp;文件一</li>
+					<li id="cfile" class="iconfont">&#xe672;&nbsp;文件二</li>
+						<ul id="doc">
+							<li class="iconfont">&#xe798;&nbsp;文档一</li>
+							<li class="iconfont">&#xe798;&nbsp;文档二</li>
+						</ul>
+					<li class="iconfont">&#xe672;&nbsp;文件三</li>
+				</ul>
+			
+			<li class="iconfont">&#xe611;&nbsp;个人收藏</li>
+			<li class="iconfont">&#xe611;&nbsp;我的分享</li>
+			<li class="iconfont">&#xe6b6;&nbsp;图&nbsp;&nbsp;库</li>
+			<li class="iconfont">&#xe632;&nbsp;成长记录</li>
+			<li class="iconfont">&#xe638;&nbsp;账户信息</li>
+		</ul>
+	</div>
+	<div id="right">
+		<div id="right-top">
+			<ul>
+				<li>c站 /</li>
+				<li>个人报表 /</li>
+				<li>文件一 /</li>
+				<li>文档一</li>
+			</ul>
+		</div>
+		<div id="inquiry">
+			<div id="up">
+				<span>查询项</span>
+				<select>
+					<option>第一项</option>
+					<option>第二项</option>
+					<option>第三项</option>
+				</select>
+				<span>买方</span>
+				<select>
+					<option>小A</option>
+					<option>小B</option>
+				</select>
+				<span>日期</span>
+				<input type="text" id="date"/>
+				<span>总耗时</span>
+					<select>
+					<option>1天</option>
+					<option>8天</option>
+					<option>20天</option>
+				</select>
+			</div>
+			<div id="down">
+				<span>卖方</span>
+				<select>
+					<option>小C</option>
+					<option>小D</option>
+				</select>
+				<span>人数</span>
+				<select>
+					<option>10人</option>
+					<option>20人</option>
+				</select>
+				<span>成交项</span>
+				<select>
+					<option>10项</option>
+					<option>20项</option>
+				</select>
+			</div>
+			<input class="in-search" type="button" value="搜索" />
+		</div>
+		<div id="his-inquiry">
+			<ul>
+				<li id="click-left" class="click">< </li>
+				<li title="test" class="his-start"></li>
+				<li title="test"></li>
+				<li title="test"></li>
+				<li title="test"></li>
+				<li title="test"></li>
+				<li title="test"></li>
+				<li id="click-right" class="click"> ></li>
+				<li id="last-li"></li>
+			</ul>
+		</div>
+		<div id="trade">
+			<h3>2016年4月份统计</h3>
+			<ul>
+				<li class="first"></li>
+				<li class="second"></li>
+				<li class="third"></li>
+				<li class="forth"></li>
+			</ul>
+		</div>
+
+		<div id="groups">
+			<div id="group1">
+				<h3>第一组项目</h3>
+				<ul id="grp1-title">
+					<li class="tabFocus">项目一</li>
+					<li>项目二</li>
+					<li>项目三</li>
+					<li>项目四</li>
+					<li>项目五</li>
+				</ul>
+				<ul id="grp1-content">
+					<li class="onFocus">pppppp</li>
+					<li>zzzzzz</li>
+					<li>xxxxxx</li>
+					<li>cccccc</li>
+					<li>vvvvvv</li>
+				</ul>
+			</div>
+			<div id="group2">
+				<h3>第一组项目</h3>
+				<h4>标题</h4>
+				<p>项目报表三</p>
+				<div id="price">
+					<h4>价格</h4>
+					<p><span>￥158</span></p>
+				</div>
+				<div id="charge">
+					<h4>负责人</h4>
+					<p>小A</p>
+				</div>
+				<h4>详细描述</h4>
+				<p>该项目目前负责人是</p>
+				<div id="grp2-bottom">
+					<input type="checkbox" /><span>遵守保密协定</span><input class="search" type="button" value="搜索" />
+				</div>
+			</div>
+			<div id="calendar">
+				<h3>日历</h3>
+			</div>
+			<div id="cars">
+				<h3>汽车行业品牌榜</h3>
+				<table id="list" cellspacing="0" cellpadding="0">
+					<tr>
+						<th>排名</th>
+						<th>品牌</th>
+						<th class="w">搜索指数</th>
+					</tr>
+					<tr>
+						<td class="w1">1</td>
+						<td class="w2">大众</td>
+						<td class="w">48912001&nbsp;<meter class="m" style="display:inline-block;width:200px;height:5px;margin-top:5px;" value="48912001" min="0" max="50000000" low="20000000" high="30000000" title="80分" optimum="50000000">48912001</meter></td>
+					</tr>
+					<tr>
+						<td class="w1">2</td>
+						<td class="w2">丰田</td>
+						<td class="w">29307333&nbsp;<meter class="m" style="width:200px;height:5px;" value="29307333" min="0" max="50000000" low="20000000" high="30000000" title="80分" optimum="50000000">29307333</meter></td>
+					</tr>
+					<tr>
+						<td class="w1">3</td>
+						<td class="w2">奥迪</td>
+						<td class="w">23139070&nbsp;<meter class="m" style="width:200px;height:5px;" value="23139070" min="0" max="50000000" low="20000000" high="30000000" title="80分" optimum="50000000">23139070</meter></td>
+					</tr>
+					<tr>
+						<td class="w1">4</td>
+						<td class="w2">本田</td>
+						<td class="w">22885564&nbsp;<meter class="m" style="width:200px;height:5px;" value="22885564" min="0" max="50000000" low="20000000" high="30000000" title="80分" optimum="50000000">22885564</meter></td>
+					</tr>
+					<tr>
+						<td class="w1">5</td>
+						<td class="w2">福特</td>
+						<td class="w">22324792&nbsp;<meter class="m" style="width:200px;height:5px;" value="22324792" min="0" max="50000000" low="20000000" high="30000000" title="80分" optimum="50000000">22324792</meter></td>
+					</tr>
+					<tr>
+						<td class="w1">6</td>
+						<td class="w2">宝马</td>
+						<td class="w">21444077&nbsp;<meter class="m" style="width:200px;height:5px;" value="21444077" min="0" max="50000000" low="20000000" high="30000000" title="80分" optimum="50000000">21444077</meter></td>
+					</tr>
+					<tr>
+						<td class="w1">7</td>
+						<td class="w2">现代</td>
+						<td class="w">20114969&nbsp;<meter class="m" style="width:200px;height:5px;" value="20114969" min="0" max="50000000" low="20000000" high="30000000" title="80分" optimum="50000000">20114969</meter></td>
+					</tr>
+					<tr>
+						<td class="w1">8</td>
+						<td class="w2">起亚</td>
+						<td class="w">19251680&nbsp;<meter class="m" style="width:200px;height:5px;" value="19251680" min="0" max="50000000" low="20000000" high="30000000" title="80分" optimum="50000000">19251680</meter></td>
+					</tr>
+					<tr>
+						<td class="w1">9</td>
+						<td class="w2">奔驰</td>
+						<td class="w">19172837&nbsp;<meter class="m" style="width:200px;height:5px;" value="19172837" min="0" max="50000000" low="20000000" high="30000000" title="80分" optimum="50000000">19172837</meter></td>
+					</tr>
+					<tr>
+						<td class="w1">10</td>
+						<td class="w2">别克</td>
+						<td class="w">18544017&nbsp;<meter class="m" style="width:200px;height:5px;" value="18544017" min="0" max="50000000" low="20000000" high="30000000" title="80分" optimum="50000000">18544017</meter></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+  </div>
+ </body>
+</html>
