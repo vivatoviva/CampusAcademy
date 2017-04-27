@@ -1,0 +1,49 @@
+	#quote-history
+		{
+			width:100%;
+			height:auto;
+
+		}
+		#quote-history-box
+		{
+			/*width: 100%;*/
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-left: 2.7%;
+			margin: 20px 0 0 0;
+			/*background-color: #fff;*/
+			/*border: 1px #ccc solid;*/
+			line-height: 10px;
+		}
+		/*#history-search img
+		{
+			height: 96px;
+			padding-left: 20px;
+		}*/
+		/*<!--.time-price img,.direct img,#history-search img
+		{
+			
+			padding-left: 20px;
+		}-->*/
+		/*.time-price,#history-search,.direct
+		{
+			
+			display: inline-block;
+		}*/
+		#quote-history-box img
+		{
+			display: inline-block;
+			
+		}
+		.time-price
+		{
+			width: 12.5%;
+		}
+		#direct-left,#direct-right
+		{
+			width: 3.3%;
+		}
+		#history-search
+		{
+			width: 13.6%;
+		}
