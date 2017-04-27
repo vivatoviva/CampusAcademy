@@ -1,0 +1,19 @@
+#header{background: #3399cc;height:50px;}
+		img {
+		       padding-left:45px;
+		       padding-top: 7px;
+		   }
+		.text{
+		         left: 1550px;
+		         top: 10px;
+		         border-radius: 10px;
+		         position: absolute;
+		          }
+		 .load{
+		 	color: white;
+		 	font-size:10px;
+		 	margin-left: 1700px;
+		 	margin-top: 14px;
+                              position: absolute;
+                          }
+		 
