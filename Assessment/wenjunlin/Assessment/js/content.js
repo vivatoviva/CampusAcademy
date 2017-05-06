@@ -77,25 +77,59 @@ $(function(){
 
 
 /*   小点击  */
+// $(function(){
+// 	var value = 0;
+// 	$(".let-btn").bind("click",function(){
+// 		value = value - 15;
+// 		$(".item-box").animate({"margin-left":value+"%"});
+// 	})
+// 	$(".rig-btn").bind("click",function(){
+// 		value = value + 15;
+// 		$(".item-box").animate({"margin-left":value+"%"});
+// 	})
+// })
 $(function(){
-	var value = 0;
+	var valuec = 0;
 	$(".let-btn").bind("click",function(){
-		value = value - 15;
-		$(".item-box").animate({"margin-left":value+"%"});
+		if (valuec == -15) {
+			alert("后面没有东西了");
+		}else{
+			valuec = valuec - 15;
+			$(".item-box").animate({"margin-left":valuec+"%"});
+		}
 	})
+	
 	$(".rig-btn").bind("click",function(){
-		value = value + 15;
-		$(".item-box").animate({"margin-left":value+"%"});
+		if (valuec == 0) {
+			alert("前面没有东西了");
+		}else{
+			valuec = valuec + 15;
+			$(".item-box").animate({"margin-left":valuec+"%"});
+		}
 	})
 })
 
 
-
-
-
-
-
-
+/*   日历动画  */
+$(function(){
+	$(".time-btn-box").bind("click",function(){
+		$(".item-func-content").animate({"margin-right":"60px","opacity":1},1000,function(){
+			$(".item-func-content").animate({"margin-right":"20px"},function(){
+				$(".time-btn-back").css({"display":"block"});
+				$(".time-btn-back").animate({"opacity":"1"});
+			})
+		})
+	})
+})
+$(function(){
+	$(".time-btn-back").bind("click",function(){
+		$(".item-func-content").animate({"opacity":"0"},function(){
+			$(".item-func-content").css({"margin-right":"-500px"});
+		});
+		$(".time-btn-back").animate({"opacity":"0"});
+		$(".time-btn-back").css({"display":"none"});
+	})
+})
 
 
 
