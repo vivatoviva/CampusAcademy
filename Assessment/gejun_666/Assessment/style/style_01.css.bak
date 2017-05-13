@@ -1,0 +1,21 @@
+/*www.jam_word*/
+body,ul,ol,p,h1,h2,h3,h4,dl,dd,form,input,textarea,select
+{ padding:0;margin:0;font-family:arial;}
+li{ list-style:none}
+img{border:none}
+a{text-decoration:none}
+a:hover{text-decoration:underline;}
+body{background:url(../images/background_01.png) repeat-x; }
+
+#top{width:960px; height:30px; margin:0 auto;}
+
+.top_menu {float:left;}
+.top_menu li{background:url(../images/top_menu.png) no-repeat right:14px;}
+.top_menu a {}
+.top_menu a:hover {}
+.top_menu .no_point{}
+
+.top_bar{float:right;}
+.top_bar li{}
+.top_bar .phone{}
+.top_bar .help{}
