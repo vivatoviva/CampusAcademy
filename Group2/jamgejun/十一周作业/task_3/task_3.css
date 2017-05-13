@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* task_3 */
-body,ul,li{margin:0px;padding:0px;list-style:none;}
+body,ul,li{margin:0px;padding:0px;list-style:none;min-width:400px;}
 .clear{zoom:1}
 .clear:after{display:block;content:"";clear:both;}
 
