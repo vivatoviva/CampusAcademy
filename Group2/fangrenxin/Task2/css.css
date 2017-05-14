@@ -1,0 +1,105 @@
+body {
+	background-color: #dedede;
+}
+* {
+	margin: 0 auto;
+	text-decoration: none;
+}
+
+#header {
+	height: 60px;
+	background-color: #333333;
+}
+.header_logo {
+	height: 60px;
+	position: absolute;
+	left: 36px;
+	top: 8px;
+}
+.list ul {
+	margin-right: 23px;
+}
+.list li {
+	display: block;
+	float: right;
+	line-height: 60px;
+	padding-left: 20px;
+}
+.list a {
+	color: #fff;
+	font-size: 15px;
+}
+
+#content {
+	line-height: 32px;
+}
+.pic {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.passage,.other_passage,.photo,.side {
+	background-color: #fff;
+	margin-top: 20px;
+	margin-left: 20px; 
+	margin-right: 20px;
+	border-left: 1px;
+	border-top: 1px;
+	border-right: 2px solid;
+	border-bottom: 2px solid;
+	border-color: #cdcdcd;
+	padding-left: 20px;
+	padding-top: 38px;
+	padding-right: 26px;
+	padding-bottom: 40px;
+}
+.other_passage ul {
+	list-style: none;
+}
+.photo h2 {
+	margin-bottom: 10px;
+}
+.a1 {
+	margin-top: 20px;
+	display: inline-block;
+	border: 1px solid;
+}
+.a1 p {
+	text-align: center;
+}
+.table {
+	background-color: #fff;
+	margin-top: 20px;
+	margin-left: 20px; 
+	margin-right: 20px;
+	border-left: 1px;
+	border-top: 1px;
+	border-right: 2px solid;
+	border-bottom: 2px solid;
+	border-color: #cdcdcd;
+	padding-left: 20px;
+	padding-top: 38px;
+	padding-right: 26px;
+	padding-bottom: 40px;
+}
+.table table {
+	border-color: #cdcdcd;
+	margin-top: 10px;
+	width: 1800px;
+	text-align: center;
+}
+
+.side p,.side .a3 {
+	text-align: right;
+	position: relative;
+	right: 60%;
+	top: 20px;
+}
+.side .a4 {
+	position: relative;
+	top: 20px;
+	border-radius: 7px;
+}
+#foot .a5 {
+	background-color: #000;
+	color: #fff;
+}
