@@ -1,0 +1,45 @@
+body{
+	background:#eee;
+	border-color:#999;
+	width:920px;
+	height:420px;
+	margin:20px;
+	padding:0;
+}
+img{
+	width:80px;
+	height:80px;
+	display: block;
+	padding:20px;
+
+}
+.team{
+	width:200px;
+	padding:20px;
+	background-color:white; 
+}
+.name{
+	position:absolute;
+    font-size:20px;
+    left:160px;
+    top:120px;
+}
+.introduce{
+	position:absolute;
+    background-color:white;
+    left:276px;
+    top:20px;
+	background-color:white;
+	width:520px;
+}
+.logo{
+	position:absolute;
+	background-color:white;
+	width:120px;
+	left:814px;
+	top:20px;
+}
+.logo p{
+	position:relative;
+	text-align:center;
+}
