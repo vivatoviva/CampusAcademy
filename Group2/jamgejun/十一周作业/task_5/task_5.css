@@ -3,13 +3,13 @@
 @charset "utf-8";
 /* hard bee task_2 */
 h1,h2,h3,body,ul,dl,a,th,td,table,textarea,input,p{margin:0;padding:0;list-style:none;border:none;text-decoration:none;border-collapse:collapse;resize:none;outline:none;}
+body{background:#dedede;min-width:800px;}/* 防止内容被自适应大小挤垮 */
 
 /* 清浮动部分和标题统一格式 */
 .clear{zoom:1}
 .clear:after{content:"";display:block;clear:both;}
 .Title{font-size:18px;color:#9e968d;margin-top:16px;}
 .Commentary{font-size:12px;color:#756b6f;}
-body{background:#dedede;min-width:800px;}
 .Content{margin:0 auto;width:100%;background:#dedede;padding-bottom:4px;}
 .Top{margin:0 auto;height:48px;background:#333;}
 .Top ul{list-style:circle;}
