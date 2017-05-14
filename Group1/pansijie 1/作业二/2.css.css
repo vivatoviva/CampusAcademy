@@ -1,0 +1,151 @@
+body{
+	font-size: 14px;
+	border:0px;
+	margin:0px;
+	background:#DEDEDE;
+}
+.div1{
+	width:100%;
+	height:60px;
+	background-color:#3C3C3C;
+	position:relative;
+}
+.div1 .navg {
+	float:right;
+	margin-bottom:40px;
+}
+.div1 .navg ul li{
+	display:inline;
+	margin-bottom:40px;
+}
+.navg ul li a{
+	color:white;
+	text-decoration:none;
+}
+#a1{
+	color:gray;
+}
+.div2{
+	border-bottom:2px solid gray;
+    border-right:2px solid gray;
+    background-color:white;
+    margin:20px;
+    margin-top:40px;
+    padding:20px;
+	}
+.div3{
+	border-bottom:2px solid gray;
+    border-right:2px solid gray;
+    background-color:white;
+    margin:20px;
+    padding:20px;
+	}
+.div3 ul li{
+	list-style:none;
+}
+.div4{
+	border-bottom:2px solid gray;
+	border-right:2px solid gray;
+	background-color:white;
+	margin:20px;
+	padding:20px;
+}
+.div4 .pic{
+        border:1px solid gray;
+        width:140px;
+        height:130px;
+        margin:10px;
+        padding:10px;
+}
+.div4 .pic .p1{
+       text-align:center;
+       margin:8px;
+       padding-bottom:3px;
+}
+.div4 img{
+        width:100px;
+        height:100px;
+	    margin-top:-14px;
+        padding:0 16px;
+}
+.div5{
+	border-bottom:2px solid gray;
+	border-right:2px solid gray;
+	background-color:white;
+	margin:20px;
+	padding:20px;
+}
+.table1{
+	border-collapse: collapse;
+	width: 100%;
+}
+caption{
+	color:#333;
+	font-size:15px;
+	text-align:left;
+}
+.table1 td,th{
+	border: 1px solid #D1CFCF;
+	padding: 5px;
+	text-align:left;
+}
+.table1 th{
+	background-color: #333;
+    font-weight: bold;
+	color: #fff;
+}
+.table1 td{
+	font-size: 12px;
+	font-weight: normal;
+}
+.table1 .tr1 td{
+	background-color: gray;
+	font-size: 14px;
+	font-weight:bold;
+	color: black;
+}
+.div5 .table1 tr td a:link{
+	color:purple;
+}
+.div6{
+	border-bottom:2px solid gray;
+	border-right:2px solid gray;
+	background-color:white;
+	margin:20px;
+	padding:20px;
+
+}
+.div8 input[type=submit]{    
+       width:100%;
+       background-color:blue;
+       height:30px;
+}
+.div7{
+	height:50px;
+	background-color:black;
+}
+.div7 p{
+	text-align:center;
+	color:white;
+	padding-top:15px;
+	font-size:10px;
+}
+.tb th{
+    text-align:right;
+	vertical-align:top;
+	margin-right:5px;
+	padding-right:10px;
+	padding-top:2px;
+	border:none;
+}
+.tb td{
+	vertical-align:top;
+	padding-bottom:15px;
+	text-align:left;
+	padding-bottom:0px;
+}
+.p1 input[type=submit]{    
+       width:100%;
+       background-color:grey;
+       height:30px;
+   }
