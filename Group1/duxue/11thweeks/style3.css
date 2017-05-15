@@ -1,5 +1,7 @@
 .head{
 	height:60px;
+	width:100%;
+	margin:0 auto;
 	background-color:#333333;
 }
 body{
@@ -29,38 +31,44 @@ a:hover{
 #article_1{
 	margin:20px auto;
 	background-color:white;
-	width:96%;
+	width:70%;
 	padding:15px;
 	font-family:'Microsoft YaHei','Hiragino Sans GB',Helvetica,Arial;
+	position:absolute;
+	left:20px;
 }
 #article_2{
-	margin:20px auto;
+	margin-top:810px;
+	margin-left:20px;
 	background-color:white;
-	width:96%;
+	width:70%;
 	padding:15px;
 	font-family:'Microsoft YaHei','Hiragino Sans GB',Helvetica,Arial;
-}
+	}
 #article_3{
 	margin:20px auto;
+	margin-left:20px;
 	background-color:white;
-	width:96%;
+	width:70%;
 	padding:15px;
 	font-family:'Microsoft YaHei','Hiragino Sans GB',Helvetica,Arial;
 }
 #picture{
 	margin:20px auto;
+	margin-left:20px;
 	background-color:white;
-	width:96%;
+	width:70%;
 	padding:15px;
 	font-family:'Microsoft YaHei','Hiragino Sans GB',Helvetica,Arial;
 }
 #item{
-	margin:20px auto;
 	background-color:white;
-	width:1008px;
-	padding:32px;
+	width:362px;
+	height:536px;
 	font-family:'Microsoft YaHei','Hiragino Sans GB',Helvetica,Arial;
-	padding-left:450px;
+	position:absolute;
+	left:1142px;
+	top:80px;
 }
 p{
 	text-indent:2em;
@@ -95,8 +103,8 @@ div p a{
 	color:blue;
 }
 table{
-	margin:15px;
-	width:1420px;
+	margin:0px;
+	width:100%;
 	border:1px solid black;
 	border-spacing:0px;
 }
@@ -123,12 +131,12 @@ table th{
 }
 .submit {
     border-radius: 10px;
-    height: 40px;
+    height: 38px;
     background-color: #3355d0;
     text-align: center;
     position:absolute;
-    left:178px;
-    width:1180px;
+    left:-2px;
+    width:324px;
 }
 .submit span {
     line-height: 40px;
@@ -137,7 +145,7 @@ table th{
 }
 
 footer{
-	width:1518px;
+	width:100%;
 	height:70px;
 	background-color:black;
 	color:white;
