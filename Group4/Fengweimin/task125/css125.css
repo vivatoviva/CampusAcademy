@@ -1,5 +1,5 @@
 body{padding:0px;margin:0px auto;position: relative;background:#dedede;}
-#top{width:1280px;height:60px;background:url(img/topbackground.png) no-repeat;
+#top{width:1280px;height:60px;background:url(img1/topbackground.png) no-repeat;
 	margin:0 auto;padding-top: 0px;padding-bottom:20px;}
 .topmenu{margin:0px;padding-left:900px;}
 .topmenu li{float:left;padding-right:20px;margin-top:20px;line-height:20px;}
