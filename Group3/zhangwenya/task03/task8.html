@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>响应式网格（栅格化）布局</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper{
+            box-sizing: border-box;
+            padding: 10px;
+            height: 100%;
+        }
+        .wrapper:before, .wrapper:after {
+            content: "";
+            display: table;
+        }
+        .wrapper:after {
+            clear: both;
+        }
+        .wrapper {
+            *zoom: 1; /*IE/7/6*/
+        }
+        .wrapper div{
+            height: 50px;
+            background-color: #eee;
+            box-sizing: border-box;
+            margin: 10px;
+            float: left;
+            border: 1px solid #999;
+        }
+        .col-md-1{
+            width: calc(8.33333% - 20px);
+        }
+        .col-md-2 {
+            width: calc(16.66667% - 20px); }
+        .col-md-3 {
+            width: calc(25% - 20px); }
+        .col-md-4 {
+            width: calc(33.33333% - 20px); }
+        .col-md-6 {
+            width: calc(50% - 20px); }
+        @media all and (max-width: 768px){
+            .col-sj-2 {
+                width: calc(16.66667% - 20px); }
+            .col-sj-3 {
+                width: calc(25% - 20px); }
+            .col-sj-6 {
+                width: calc(50% - 20px); }
+            .col-sj-8{
+                width: calc( 66.666% - 20px );
+            }
+            .col-sj-12{
+                width: calc( 100% - 20px );
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="col-md-4 col-sj-6"></div>
+        <div class="col-md-4 col-sj-6"></div>
+        <div class="col-md-4 col-sj-12"></div>
+        <div class="col-md-3 col-sj-3"></div>
+        <div class="col-md-6 col-sj-6"></div>
+        <div class="col-md-3 col-sj-3"></div>
+        <div class="col-md-1 col-sj-2"></div>
+        <div class="col-md-1 col-sj-2"></div>
+        <div class="col-md-2 col-sj-8"></div>
+        <div class="col-md-2 col-sj-3"></div>
+        <div class="col-md-6 col-sj-3"></div>
+    </div>
+</body>
+</html>

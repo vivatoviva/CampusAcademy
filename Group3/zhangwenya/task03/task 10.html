@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.ct {
+		padding: 25px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.ct>div {
+		width: 150px;
+		margin-bottom: 10px;
+	}
+	.div-1 {
+		height: 120px;
+		border: 1px solid #f00;
+	}
+	.div-2 {
+		height: 100px;
+		border: 1px solid #f00;
+	}
+	.div-3 {
+		height: 40px;
+		border: 1px solid #f00;
+	}
+	.div-4 {
+		height: 200px;
+		border: 1px solid #00f;
+	}
+	@media all and (max-width: 640px) {
+		.ct {
+			align-items: flex-start;
+			flex-wrap: wrap;
+		}
+		.div-4 {
+			order: -1;
+		}
+	}
+	</style>
+</head>
+<body>
+<div class="ct">
+	<div class="div-1"></div>
+	<div class="div-2"></div>
+	<div class="div-3"></div>
+	<div class="div-4"></div>
+</div>
+</body>
+</html>
