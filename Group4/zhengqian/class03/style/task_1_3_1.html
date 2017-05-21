@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>三栏式布局</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	body,h2,p{
+		margin:0 auto;
+		padding:0;
+	}
+	p{
+		font-family: "宋体"；
+		font-size:16px;
+		line-height: 28px;
+	}
+	.container{
+		background-color: #eee;
+		border: 1px solid #999;
+	}
+	/*.wrap{
+		margin:0 auto;
+		padding:20px;
+		background:#eee;
+		border:1px solid #999;
+	}*/
+	.wrap,.wrap1,.wrap2,.wrap3{
+		background-color: #eee;
+	}
+	.left{
+		float: left;
+		padding:20px;
+		width: 160px;
+		border: 1px solid #999;
+		background-color: #fff;
+	}
+	.left img{
+		float: left;
+		width: 80px;
+		height: 80px;
+	}
+	.left .teamName{
+		font-family: "行楷"；
+		font-size:20px;
+		font-style: italic;
+		float: left;
+	}
+
+	.mid{
+		margin:0 auto;
+		background-color: #fff;
+		border: 1px solid #999;
+		margin:20px 160px 20px 240px;
+	}
+
+	.right{
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		width: 80px;
+		padding:20px;
+		border: 1px solid #999;
+		background-color: #fff;
+	}
+	.right img{
+		width: 80px;
+		height: 80px;
+	}s
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="wrap">
+			<div class="left">
+			<div class="wrap1">
+				<div class="teamLogo">
+					<img src="../img/logo1.jpg">
+				</div>
+				<div class="teamName">
+					<p>FIM</p>
+				</div>
+			</div>
+			</div>
+			<div class="wrap2">
+			<div class="mid">
+				<h4>团队的介绍</h4>
+				<p>百度前端技术学院是一个为大学生创办的免费的前端技术实践、分享、交流平台。由百度校园招聘组、百度校园品牌部、百度前端技术部以及多个百度的前端团队联合创办。</p>
+				<p>百度前端技术学院是一个为大学生创办的免费的前端技术实践、分享、交流平台。由百度校园招聘组、百度校园品牌部、百度前端技术部以及多个百度的前端团队联合创办。</p>
+				<p>百度前端技术学院是一个为大学生创办的免费的前端技术实践、分享、交流平台。由百度校园招聘组、百度校园品牌部、百度前端技术部以及多个百度的前端团队联合创办。</p>
+ 
+				<p>学院组织了一批百度在职工程师，精心编写了数十个实践编码任务，将技术知识点系统有机地串联在各个充满趣味与挑战的任务中，同学们通过实际地编码练习来掌握知识，再辅以互相评价、学习笔记等方式，加深对于学习内容的理解。</p>
+				<p>学院组织了一批百度在职工程师，精心编写了数十个实践编码任务，将技术知识点系统有机地串联在各个充满趣味与挑战的任务中，同学们通过实际地编码练习来掌握知识，再辅以互相评价、学习笔记等方式，加深对于学习内容的理解。</p>
+				<h4>团队的影响</h4>
+				<p>在过去的三年中，百度前端技术学院累积吸引了上万名同学参加，并且有数十名同学在学习后，顺利加入了百度，成为了百度的前端工程师。</p>
+				<p>在过去的三年中，百度前端技术学院累积吸引了上万名同学参加，并且有数十名同学在学习后，顺利加入了百度，成为了百度的前端工程师。</p>
+			</div>
+			</div>
+			<div class="wrap3">
+			<div class="right">
+				<img src="../img/logo2.jpg">
+				<img src="../img/logo3.jpg">
+				<img src="../img/logo4.jpg">
+				<img src="../img/logo5.jpg">
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
