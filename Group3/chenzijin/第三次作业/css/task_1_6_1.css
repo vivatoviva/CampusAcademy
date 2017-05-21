@@ -79,10 +79,7 @@ header{
     -moz-opacity:0.5;
     position:absolute;
     top:2px;
-}
-.top_l_p_l:hover,.top_l_p_r:hover{
-    opacity:0.1;
-    -moz-opacity:0.1;
+    z-index:4;
 }
 .top_l_p_r{
     background:#E1ABC3;
